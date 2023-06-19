@@ -4,11 +4,15 @@
 */
 import { bootstrapApplication,provideProtractorTestingSupport } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-
+import { HomeComponent } from './app/home/home.component';
 bootstrapApplication(AppComponent,
     {providers: [provideProtractorTestingSupport()]})
   .catch(err => console.error(err));
 
+
+  bootstrapApplication(HomeComponent,
+    {providers: [provideProtractorTestingSupport()]})
+  .catch(err => console.error(err));
 
 /*
 Copyright Google LLC. All Rights Reserved.
