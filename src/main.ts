@@ -1,18 +1,11 @@
 /*
-*  Protractor support is deprecated in Angular.
-*  Protractor is used in this example for compatibility with Angular documentation tools.
-*/
-import { bootstrapApplication,provideProtractorTestingSupport } from '@angular/platform-browser';
-import { AppComponent } from './app/app.component';
-import { HomeComponent } from './app/home/home.component';
-bootstrapApplication(AppComponent,
-    {providers: [provideProtractorTestingSupport()]})
-  .catch(err => console.error(err));
-
-
-  bootstrapApplication(HomeComponent,
-    {providers: [provideProtractorTestingSupport()]})
-  .catch(err => console.error(err));
+ *  Protractor support is deprecated in Angular.
+ *  Protractor is used in this example for compatibility with Angular documentation tools.
+ */
+import {
+  bootstrapApplication,
+  provideProtractorTestingSupport,
+} from '@angular/platform-browser';
 
 /*
 Copyright Google LLC. All Rights Reserved.
